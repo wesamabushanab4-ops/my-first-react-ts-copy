@@ -26,6 +26,14 @@ function App() {
     setCount(count + 1)
   }
 
+  function decrement() {
+    setCount(count - 1)
+  }
+
+  function reset() {
+    setCount(0)
+  }
+
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
     setSubmittedName(name.trim())
@@ -113,11 +121,15 @@ function App() {
         <Card sx={{ mb: 3, borderRadius: 3 }}>
           <CardContent sx={{ p: { xs: 3, md: 4 } }}>
             <Typography variant="overline" color="primary" fontWeight={800}>05 / MUI + useState</Typography>
-            <Typography variant="h4" fontWeight={800} sx={{ mb: 1 }}>A stateful button</Typography>
+            <Typography variant="h4" fontWeight={800} sx={{ mb: 1 }}>Counter</Typography>
             <Typography color="text.secondary" sx={{ mb: 3 }}>MUI handles the button design. React handles state and logic.</Typography>
-            <Stack direction="row" spacing={2} alignItems="center">
+            <Stack spacing={2} alignItems="flex-start">
               <Typography variant="h3" fontWeight={800} color="primary">{count}</Typography>
-              <Button variant="contained" onClick={increment}>Increment</Button>
+              <Stack direction={{ xs: 'column', sm: 'row' }} spacing={1.5}>
+                <Button variant="contained" onClick={increment}>Increment</Button>
+                <Button variant="outlined" onClick={decrement}>Decrement</Button>
+                <Button variant="text" onClick={reset}>Reset</Button>
+              </Stack>
             </Stack>
           </CardContent>
         </Card>
