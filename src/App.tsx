@@ -134,6 +134,19 @@ function App() {
           </CardContent>
         </Card>
 
+        <Card sx={{ mb: 3, borderRadius: 3 }}>
+          <CardContent sx={{ p: { xs: 3, md: 4 } }}>
+            <Typography variant="overline" color="primary" fontWeight={800}>06 / Typography</Typography>
+            <Typography variant="h4" fontWeight={800} sx={{ mb: 1 }}>Text with variants</Typography>
+            <Typography color="text.secondary" sx={{ mb: 3 }}>Typography replaces raw HTML headings and paragraphs with a consistent MUI type scale.</Typography>
+            <Stack spacing={2}>
+              <Typography variant="h1" sx={{ fontSize: { xs: '2.5rem', md: '3.5rem' } }}>Hello</Typography>
+              <Typography variant="h4">Products</Typography>
+              <Typography variant="body1">Welcome to our website</Typography>
+            </Stack>
+          </CardContent>
+        </Card>
+
         <Card sx={{ mb: 3, borderRadius: 3, overflow: 'hidden' }}>
           <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', md: '1fr 1fr' } }}>
             <CardContent sx={{ p: { xs: 3, md: 4 } }}>
