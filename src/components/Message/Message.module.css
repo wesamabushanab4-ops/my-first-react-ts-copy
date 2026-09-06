@@ -1,0 +1,38 @@
+.messageBlue,
+.messageGreen {
+  width: 300px;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #d1d5db;
+}
+
+.messageBlue {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.messageGreen {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.text {
+  margin: 0 0 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.button {
+  background: #111827;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #374151;
+}

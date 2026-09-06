@@ -1,0 +1,40 @@
+.card {
+  width: 250px;
+  background: white;
+  border: 1px solid #d1d5db;
+  padding: 1rem;
+  margin: 0;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.title {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+  color: #111827;
+}
+
+.price {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.button {
+  background: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: #16a34a;
+}

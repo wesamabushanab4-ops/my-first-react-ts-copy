@@ -1,0 +1,67 @@
+
+.counterBox {
+  width: 300px;
+  background: #fff7ed;
+  border: 1px solid #fdba74;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.label {
+  margin: 0 0 0.75rem;
+  color: #c2410c;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.value {
+  margin: 0 0 1rem;
+  font-size: 30px;
+  color: #1f2937;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.buttonPrimary,
+.buttonSecondary,
+.buttonReset {
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.buttonPrimary {
+  background: #2563eb;
+  color: white;
+}
+
+.buttonPrimary:hover {
+  background: #1d4ed8;
+}
+
+.buttonSecondary {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+.buttonSecondary:hover {
+  background: #d1d5db;
+}
+
+.buttonReset {
+  background: #ef4444;
+  color: white;
+}
+
+.buttonReset:hover {
+  background: #dc2626;
+}
